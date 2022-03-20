@@ -7,6 +7,9 @@
  :root {
 
     --body-bg: #ebebeb;
+    --title-carousel: #000000;
+    --background-carousel: #fff;
+    --p-carousel: #421e86;
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -28,7 +31,7 @@
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #000000;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -8259,7 +8262,7 @@
   
   .blog-entry {
     width: 100%;
-    background: #fff; }
+    background: var(--background-carousel); }
     .blog-entry .text {
       position: relative;
       border-top: 0;
@@ -8269,13 +8272,13 @@
         margin-bottom: 16px;
         font-weight: 600; }
         .blog-entry .text .heading a {
-          color: #000; }
+          color: var(--title-carousel); }
           .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
             color: #421e86; }
       .blog-entry .text .meta-chat {
         color: #b3b3b3; }
       .blog-entry .text .read {
-        color: #000;
+        color: var(--dark);
         font-size: 14px; }
     .blog-entry .meta-date {
       display: inline-block;

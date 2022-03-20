@@ -5,7 +5,10 @@ body{
 }
 
 .dark-mode:root{
-  --body-bg: #212529;
+  --body-bg: #000000;
+  --title-carousel: #e7e7e7;
+  --background-carousel: #1a1c1f;
+  --p-carousel: #8b61da;
 }
 
 .row{
@@ -16,8 +19,8 @@ body{
     padding: 70px 0;
 }
 
-p, li{
-    color: #FFF;
+p, li, h5{
+    color: var(--p-carousel);
     font-size: 20px;
 }
 
@@ -129,7 +132,7 @@ header, .navbar{
     justify-content: space-between;
     align-items: center;
     border-radius: 40px;
-    background-color: #475569;
+    background-color: var(--body-bg);
   }
 
   .switch .switch-wrapper .input{
@@ -151,7 +154,7 @@ header, .navbar{
   }
 
   .switch .switch-wrapper input:checked + .switch-button{
-    background-color: #58A721;
+    background-color: #212529;
   }
   .switch .switch-wrapper input:checked + .switch-button::before{
     transform: translateX(26px);
