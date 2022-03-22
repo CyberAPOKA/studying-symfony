@@ -8131,12 +8131,11 @@
       color: inherit;
       border-color: #dee2e6; } }
   
-  body {
-    
+  body{
     font-size: 14px;
     line-height: 1.8;
     font-weight: normal;
-    color: gray;
+    color: var(--title-carousel);
    }
   
   a {
