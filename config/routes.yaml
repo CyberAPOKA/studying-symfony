@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\HomeController::home
+
+curriculum:    
+    path: /curriculum
+    controller: App\Controller\CurriculumController::home
