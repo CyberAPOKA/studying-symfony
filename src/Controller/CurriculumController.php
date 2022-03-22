@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CurriculumController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/curriculum")
      */
     public function home()
 {
