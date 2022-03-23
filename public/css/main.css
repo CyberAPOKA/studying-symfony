@@ -1,8 +1,27 @@
 body{
     font-family: 'Courier New', Courier, monospace !important;
     background-color: var(--body-bg);
-    
 }
+
+code {
+  display:flex;
+  flex-direction:row;
+  border:1px solid #421e86;
+  padding:2px;
+}
+input {
+  flex-grow:2;
+  border:none;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border:1px solid #421e86 !important;
+        background: #421e86 !important;
+        color:white !important;
+} 
 
 .dark-mode:root{
   --body-bg: #000000;
@@ -159,3 +178,5 @@ header, .navbar{
   .switch .switch-wrapper input:checked + .switch-button::before{
     transform: translateX(26px);
   }
+
+  

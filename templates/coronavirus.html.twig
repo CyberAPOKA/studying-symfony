@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Christian</title>
+    <title>Corona Virus</title>
       <!-- LINKS -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -12,21 +12,6 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/buttons.css">
-
-    <link rel="stylesheet" href="/css/all.css">
-    <link rel="stylesheet" href="/css/all.min.css">
-
-    <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/css/fontawesome.css">
-
-    <link rel="stylesheet" href="/css/brands.min.css">
-    <link rel="stylesheet" href="/css/brands.css">
-
-    <link rel="stylesheet" href="/css/regular.min.css">
-    <link rel="stylesheet" href="/css/regular.css">
-
-    <link rel="stylesheet" href="/css/solid.min.css">
-    <link rel="stylesheet" href="/css/solid.css">
 
 
 
@@ -98,8 +83,23 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="text-center">
-                            <h1>Installation</h1>
+                            <h1>Corona Virus Project</h1>
                         </div>  
+                        <h3>Resume</h3>
+                        <p>The corona virus project serves to show all the details about covid-19 in the city of São Leopoldo, RS - Brazil. The project is in production on the official website
+                           <a target="_blank" style="color:rgb(168, 7, 231)" href="https://www.saoleopoldo.rs.gov.br/coronavirus">
+                             https://www.saoleopoldo.rs.gov.br/coronavirus</a> with all updated data.</p>
+                             <h3>Installation:</h3>
+                        <h3>Requirements</h3>
+                        <p>-<a target="_blank" href="https://www.php.net/downloads.php" style="color:rgb(168, 7, 231)">PHP
+                        </a> Installed <a target="_blank" href="https://www.php.net/downloads.php"><i class="fa-solid fa-download"></i></a></p>
+
+                        <p>-<a target="_blank" href="https://getcomposer.org/download/" style="color:rgb(168, 7, 231)">Composer
+                        </a> Installed <a target="_blank" href="https://getcomposer.org/download/"><i class="fa-solid fa-download"></i></a></p>
+
+                        <p>-<a target="_blank" href="https://laravel.com/docs/9.x/installation" style="color:rgb(168, 7, 231)">Laravel
+                        </a> Installed <a target="_blank" href="https://laravel.com/docs/9.x/installation"><i class="fa-solid fa-download"></i></a></p>
+
                         <h3>1st Step</h3>
                         <p>-Download <a target="_blank" style="color:rgb(168, 7, 231)" href="https://github.com/CyberAPOKA/coronavirus-panel">this</a>
                              repository 
@@ -110,61 +110,56 @@
                          </p>
                          <h3>2st Step</h3>
                          <p>-Extract the folder and open it with your code editor.</p>
+
                          <h3>3st Step</h3>
-                         <p></p>
+                         <p>Use the database provided here <a href=""><i class="fa-solid fa-download"></i></a></p>
+                         <p><span style="color: red;">NOTE:</span>This data is actual data updated on 03/23/2022</p>
+
                          <h3>4st Step</h3>
                          <p>Open the terminal and enter the following codes.</p>
-                         <form>
+                         <code>
                             <input readonly  type="text" value="composer install" id="code">
                             <button onclick="copyCode()">Copy code <i class="fa-regular fa-copy"></i></button>
-                          </form><br>
-                          <form>
-                            <input readonly  type="text" value="composer install" id="code2">
+                          </code><br>
+                          <code>
+                            <input readonly  type="text" value="php artisan migrate --seed" id="code2">
                             <button onclick="copyCode2()">Copy code <i class="fa-regular fa-copy"></i></button>
-                          </form>
+                          </code>
+
+                         <p> <span style="color: red;">NOTE:</span> it is important to enter the --seed so that the admin user is created and also the role that defines the beginning and end of the evaluation!</p>
+					
+                         <code>
+                            <input readonly  type="text" value="php artisan serve" id="code3">
+                            <button onclick="copyCode3()">Copy code <i class="fa-regular fa-copy"></i></button>
+                          </code>
+                          <p class="biri">The server is already running, click on the link.</p>
+
+                          <h3>Super admin user</h3>
+                          <p>Go to the /gerenciador route and login with the data below.</p>
+                          <p>
+                           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Reveal username and password (super admin) <i class="fa-solid fa-angle-down"></i>
+                           </button>
+                       </p>
+                       <ul class="collapse" id="collapseExample">
+                                   <div class="card-header">
+                                       <h4 class="card-title" id="bordered-layout-colored-controls"> 
+                                        <code>
+                                            <input readonly  type="text" value="admin@admin" id="user">
+                                            <button onclick="copyUser()">Copy User <i class="fa-regular fa-copy"></i></button>
+                                          </code><br>
+                                          <code>
+                                            <input readonly  type="text" value="Admin123" id="password">
+                                            <button onclick="copyPassword()">Copy Password <i class="fa-regular fa-copy"></i></button>
+                                          </code>
+                                        </h4>
+                                   </div>
+                       </ul>
 					</div>
 				</div>
 			</div>
 		</section>
   </main>
-  <style>
-    form {
-        display:flex;
-        flex-direction:row;
-        border:1px solid #421e86;
-        padding:2px;
-      }
-      input {
-        flex-grow:2;
-        border:none;
-      }
-      input:focus {
-        outline: none;
-      }
-      
-      button {
-        border:1px solid #421e86;
-        background: #421e86;
-        color:white;
-      }
-  </style>
-
-  <script type="text/javascript">
-    function copyCode() {
-        var copyText = document.getElementById("code");
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-      function copyCode2() {
-        var copyText = document.getElementById("code2");
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-  </script>
 
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

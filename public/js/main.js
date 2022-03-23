@@ -48,3 +48,38 @@ const $checkbox = document.querySelector('#switch')
 $checkbox.addEventListener('change', function(){
 	$html.classList.toggle('dark-mode')
 })
+
+function copyCode() {
+	var copyText = document.getElementById("code");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	navigator.clipboard.writeText(copyText.value);
+  }
+  function copyCode2() {
+	var copyText = document.getElementById("code2");
+
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	navigator.clipboard.writeText(copyText.value);
+  }
+  function copyCode3() {
+	var copyText = document.getElementById("code3");
+
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	navigator.clipboard.writeText(copyText.value);
+  }
+  function copyUser() {
+	var copyText = document.getElementById("user");
+
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	navigator.clipboard.writeText(copyText.value);
+  }
+  function copyPassword() {
+	var copyText = document.getElementById("password");
+
+	copyText.select();
+	copyText.setSelectionRange(0, 99999);
+	navigator.clipboard.writeText(copyText.value);
+  }

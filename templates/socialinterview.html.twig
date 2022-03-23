@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Christian</title>
+    <title>Social Interview</title>
       <!-- LINKS -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -97,10 +97,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="text-center">Social Interview</h1>
+						<h1 class="text-center">Social Interview Project</h1>
                         <h3>Resume</h3>
-                        <p>This project was carried out to select qualified people for the role of social interviewer, the project is a form where the user will have to inform his personal data.</p>
-                        
+                        <p>This project was carried out to select qualified people for the role of social interviewer, the project is a form where the user will have to inform his personal data and organizers will have access to all data in their super admin profile.</p>
+                        <h3>Installation:</h3>
+                        <h3>Requirements</h3>
+                        <p>-<a target="_blank" href="https://www.php.net/downloads.php" style="color:rgb(168, 7, 231)">PHP
+                        </a> Installed <a target="_blank" href="https://www.php.net/downloads.php"><i class="fa-solid fa-download"></i></a></p>
+
+                        <p>-<a target="_blank" href="https://getcomposer.org/download/" style="color:rgb(168, 7, 231)">Composer
+                        </a> Installed <a target="_blank" href="https://getcomposer.org/download/"><i class="fa-solid fa-download"></i></a></p>
+
+                        <p>-<a target="_blank" href="https://laravel.com/docs/9.x/installation" style="color:rgb(168, 7, 231)">Laravel
+                        </a> Installed <a target="_blank" href="https://laravel.com/docs/9.x/installation"><i class="fa-solid fa-download"></i></a></p>
+
                         <h3>1st Step</h3>
                         <p>-Download <a target="_blank" style="color:rgb(168, 7, 231)" href="https://github.com/CyberAPOKA/Social-Interviewer">this</a>
                              repository 
@@ -112,7 +122,11 @@
                          <h3>2st Step</h3>
                          <p>-Extract the folder and open it with your code editor.</p>
                          <h3>3st Step</h3>
-                         <p>create a database with a name and place it in DB_DATABASE (line 12) in the .env file, example: DB_DATABASE=socialinterviewer</p>
+                         <p>Create a database with a name and place it in DB_DATABASE (line 12) in the .env file, example: DB_DATABASE=socialinterviewer.</p>
+                         <p><span style="color: red;">NOTE:</span>
+                          It is important that you use the .env that is already in the project, because it is configured accordingly to send a confirmation email to the user after submitting the form.
+                        </p>
+
                          <h3>4st Step</h3>
                          <p>Open the terminal and enter the following codes.</p>
                          <code>
@@ -130,13 +144,13 @@
                             <input readonly  type="text" value="php artisan serve" id="code3">
                             <button onclick="copyCode3()">Copy code <i class="fa-regular fa-copy"></i></button>
                           </code>
-                          <p>the server is already running, click on the link.</p>
+                          <p>The server is already running, click on the link.</p>
 
-                          <h1>Super admin user</h1>
-                          <p>go to the /gerenciador route and login with the data below.</p>
+                          <h3>Super admin user</h3>
+                          <p>Go to the /gerenciador route and login with the data below.</p>
                           <p>
                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            reveal username and password (super admin) <i class="fa-solid fa-angle-down"></i>
+                            Reveal username and password (super admin) <i class="fa-solid fa-angle-down"></i>
                            </button>
                        </p>
                        <ul class="collapse" id="collapseExample">
@@ -167,61 +181,7 @@
 			</div>
 		</section>
   </main>
-  <style>
-    code {
-        display:flex;
-        flex-direction:row;
-        border:1px solid #421e86;
-        padding:2px;
-      }
-      input {
-        flex-grow:2;
-        border:none;
-      }
-      input:focus {
-        outline: none;
-      }
-      
-      button {
-        border:1px solid #421e86;
-        background: #421e86;
-        color:white;
-      }
-  </style>
-
-  <script type="text/javascript">
-    function copyCode() {
-        var copyText = document.getElementById("code");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-      function copyCode2() {
-        var copyText = document.getElementById("code2");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-      function copyCode3() {
-        var copyText = document.getElementById("code3");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-      function copyUser() {
-        var copyText = document.getElementById("user");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-      function copyPassword() {
-        var copyText = document.getElementById("password");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-      }
-  </script>
-
+  
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
