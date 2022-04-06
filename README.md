@@ -1,6 +1,3 @@
 # studying-symfony
 ## This website is a personal blog and was made using the symfony framework to put my already developed projects with instructions on how to use them.
-you can download it or clone it using the command below
-git tag -a number_of_version -m ‘This is the number_of_version version’
--a indica a anotação da tag
--m indica a mensagem associada a tag
+Você pode baixar o projeto ou usar o comando ``` git clone https://github.com/CyberAPOKA/studying-symfony.git ```, then open the project in your editor and type the following commands in the terminal,  ``` composer install ``` and then ``` symfony serve ```, the project is already running in local environment ``` 127.0.0.1:8000 ```.
