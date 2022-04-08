@@ -21,3 +21,8 @@ generator:
 coronavirus:    
     path: /coronavirus
     controller: App\Controller\CoronavirusController::index 
+
+ 
+live-well:    
+    path: /live-well
+    controller: App\Controller\LivewellController::index    

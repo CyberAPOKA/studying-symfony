@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stages</title>
+    <title>Corona Virus</title>
       <!-- LINKS -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/buttons.css">
     <link rel="stylesheet" href="/css/copy.css">
-
 
 
 
@@ -37,7 +36,7 @@
   <header>
     <div class="container" id="nav-container">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <a href="{{path('index')}}" class="navbar-brand">
+      <a href="{{ path('index')}}" class="navbar-brand">
         <img id="logo" src="/assets/curriculum.svg" alt="Logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,10 +82,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="text-center">Stages Project</h1>
+						<div class="text-center">
+                            <h1>Live Well</h1>
+                        </div>  
                         <h3>Resume</h3>
-                        <p>This project is a system to hire interns, users register, fill in a form with their personal data and can change them, the system will contain several types of users with different permissions, it is currently being developed for the city hall of São Leopoldo, RS - Brazil.</p>
-                        <h3>Installation:</h3>
+                        <p>This project registers the diseases that people have and prescribes the medicine.</p>
+                             <h3>Installation:</h3>
                         <h3>Requirements</h3>
                         <p>-<a target="_blank" href="https://www.php.net/downloads.php" style="color:rgb(168, 7, 231)">PHP
                         </a> Installed <a target="_blank" href="https://www.php.net/downloads.php"><i class="fa-solid fa-download"></i></a></p>
@@ -96,20 +97,19 @@
 
                         <p>-<a target="_blank" href="https://laravel.com/docs/9.x/installation" style="color:rgb(168, 7, 231)">Laravel
                         </a> Installed <a target="_blank" href="https://laravel.com/docs/9.x/installation"><i class="fa-solid fa-download"></i></a></p>
-                        
+
                         <h3>1st Step</h3>
-                        <p>-Download <a target="_blank" style="color:rgb(168, 7, 231)" href="https://github.com/CyberAPOKA/stages">this</a>
+                        <p>-Download <a target="_blank" style="color:rgb(168, 7, 231)" href="https://github.com/CyberAPOKA/live-well">this</a>
                              repository 
-                                 <a target="_blank" href="https://github.com/CyberAPOKA/stages">
+                                 <a target="_blank" href="https://github.com/CyberAPOKA/live-well">
                                     <i class="fa-solid fa-download"></i>
                                  </a>
                               
                          </p>
                          <h3>2st Step</h3>
                          <p>-Extract the folder and open it with your code editor.</p>
+
                          <h3>3st Step</h3>
-                         <p>Rename the .env.example file to .env and create a database with a name and place it in DB_DATABASE (line 12) in the .env file, example: DB_DATABASE=stages</p>
-                         <h3>4st Step</h3>
                          <p>Open the terminal and enter the following codes.</p>
                          <code>
                             <input readonly  type="text" value="composer install" id="code">
@@ -120,16 +120,15 @@
                             <button onclick="copyCode2()">Copy code <i class="fa-regular fa-copy"></i></button>
                           </code>
 
-                         <p> <span style="color: red;">NOTE:</span> It is important to insert the --seed to create the admin user and also the "ghost" users to demonstrate the system.</p>
-                         <p> <span style="color: red;">NOTE 2:</span> Database migration can take about 5 minutes</p>
+                         <p> <span style="color: red;">NOTE:</span>It is important to enter the --seed so that the admin user is created!</p>
 					
                          <code>
                             <input readonly  type="text" value="php artisan serve" id="code3">
                             <button onclick="copyCode3()">Copy code <i class="fa-regular fa-copy"></i></button>
                           </code>
-                          <p>The server is already running, click on the link.</p>
-                          <h3>5st Step - Using the system</h3>
-                          <p>You can create candidate user or you can use super admin below</p>
+                          <p class="biri">The server is already running, click on the link.</p>
+
+                          <h3>Super admin user</h3>
                           <p>
                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             Reveal username and password (super admin) <i class="fa-solid fa-angle-down"></i>
@@ -139,7 +138,7 @@
                                    <div class="card-header">
                                        <h4 class="card-title" id="bordered-layout-colored-controls"> 
                                         <code>
-                                            <input readonly  type="text" value="prefeiturasaoleopoldo@gmail.com" id="user">
+                                            <input readonly  type="text" value="admin@admin.com" id="user">
                                             <button onclick="copyUser()">Copy User <i class="fa-regular fa-copy"></i></button>
                                           </code><br>
                                           <code>
@@ -149,8 +148,7 @@
                                         </h4>
                                    </div>
                        </ul>
-
-                    </div>
+					</div>
 				</div>
 			</div>
 		</section>
